@@ -1,0 +1,18 @@
+Callbacks:
+
+A callback is simply a function that you pass into another function, which will run after that function is done.
+Downsides: If you have a lot of things happening one after another, you end up with deeply nested code, sometimes 
+called "callback hell," which is messy and hard to manage. Also, handling errors can be tricky because you need to 
+check for errors at each step.
+Promises:
+
+A Promise is like a better version of callbacks. It represents something that will be done in the future, and you can 
+attach functions to it that will run when the task is done (using .then()) or when there’s an error (using .catch()).
+Advantages:
+Easier to Read: Promises allow you to chain operations, which makes your code cleaner and easier to follow.
+Better Error Handling: With Promises, you can catch errors in one place, which simplifies debugging.
+No More Callback Hell: Promises flatten the code structure, making it more readable and manageable.
+Why Promises Are Better:
+
+They’re more readable, easier to manage, and offer a cleaner way to handle errors compared to traditional callbacks,
+making them the preferred choice for dealing with asynchronous tasks in JavaScript.

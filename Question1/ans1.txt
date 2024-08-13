@@ -1,0 +1,11 @@
+The XMLHttpRequest (XHR) object is like a tool in JavaScript that allows your web page to communicate with a
+server in the background. This means your page can request data or send data without having to reload the whole
+page, which is what makes web pages feel more interactive and faster.
+
+Used in AJAX:
+1 .You start by creating an XMLHttpRequest object.
+2 .Then, you "open" a connection to the server, telling it what kind of request you're making (like GET or POST)
+and where to send it.
+3 .After that, you "send" the request off to the server.
+4 .When the server responds, you handle that response by checking if everything went smoothly
+(the request was successful) and then doing something with the data, like updating the page content.

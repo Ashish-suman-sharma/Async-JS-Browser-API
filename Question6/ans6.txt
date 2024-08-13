@@ -1,0 +1,24 @@
+localStorage:
+localStorage is like a little storage box in the browser where you can save data that stays there even after the user
+closes their browser. It’s great for things like saving user settings or keeping track of whether someone is logged in.
+Example:
+
+localStorage.setItem('username', 'JohnDoe');
+var username = localStorage.getItem('username');
+console.log(username);
+localStorage.removeItem('username');
+
+
+sessionStorage:
+sessionStorage is similar, but the data only sticks around while the page is open. Once the user closes the 
+tab or browser, the data is gone. It’s useful for things like temporarily storing form data.
+Example:
+
+sessionStorage.setItem('sessionId', 'abc123');
+var sessionId = sessionStorage.getItem('sessionId');
+console.log(sessionId);
+sessionStorage.removeItem('sessionId');
+
+When to Use Which:
+Use localStorage when you need the data to stick around even after the user leaves your site, like keeping track of user preferences.
+Use sessionStorage for temporary data that only needs to last while the user is on the site, like keeping track of what step they’re on in a form.

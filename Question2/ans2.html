@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Request Example</title>
+</head>
+<body>
+    <button id="fetchUsers">Get user names</button>
+    <ul id="userList"></ul>
+
+    <script>
+        document.getElementById('fetchUsers').addEventListener('click', function() {
+            // Create a new request
+            var xhr = new XMLHttpRequest();
+
+            // Set up the request with the URL
+            xhr.open('GET', 'https://jsonplaceholder.typicode.com/users', true);
+
+            // Handle the response when it comes back
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var users = JSON.parse(xhr.responseText);
+                    var userList = document.getElementById('userList');
+                    userList.innerHTML = ''; // Clear out any old list
+
+                    // Add each user name to the list
+                    users.forEach(function(user) {
+                        var li = document.createElement('li');
+                        li.textContent = user.name;
+                        userList.appendChild(li);
+                    });
+
+                    // Also log the names to the console
+                    console.log(users.map(user => user.name));
+                }
+            };
+
+            // Send the request
+            xhr.send();
+        });
+    </script>
+</body>
+</html>

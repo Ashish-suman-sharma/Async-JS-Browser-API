@@ -1,0 +1,10 @@
+The same-origin policy is a security rule that browsers use to keep your data safe. It basically says, "Your web page
+can only request data from the same site it came from." This means your page can’t just pull data from any website out
+there unless the other site says it’s okay.
+
+How to Work Around It:
+1 .CORS (Cross-Origin Resource Sharing): If the server you want data from is set up for it, it can allow your page to 
+access its data by adding special headers.
+2. JSONP (JSON with Padding): This is an older method that lets you load data by adding a script tag to your page, but it only works for GET requests.
+3. Proxy Server: You can send your request to your own server first, and then have your server forward it to the other site.
+4. SameSite Cookies: Sometimes, cookies can be set to control what data is shared across different sites.

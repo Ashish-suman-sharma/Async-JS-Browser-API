@@ -1,0 +1,38 @@
+DOM API (Document Object Model):
+
+This is what you use to interact with the HTML on a page. For example, you can use it to find elements (getElementById), change 
+their content, or add new elements to the page.
+Fetch API:
+
+This is a modern way to make network requests. It’s simpler and cleaner than the old XMLHttpRequest and returns a Promise, which
+ makes it easier to work with.
+
+ 
+
+
+
+Geolocation API:
+
+This API lets you find out where the user is located, which you can use for things like maps or location-based services.
+Canvas API:
+
+This one lets you draw things on a web page, like graphics, charts, or even games, using the <canvas> element and JavaScript.
+Web Storage API:
+
+This includes localStorage and sessionStorage, which let you store data in the browser that stays around even when the user 
+navigates away from the page (localStorage) or just while they have the page open (sessionStorage).
+
+
+
+
+
+Web Workers API:
+
+This lets you run scripts in the background, so your main web page doesn’t get slow or stuck when doing big tasks.
+Notifications API:
+
+This lets your web app send notifications to the user, even when they’re not actively looking at your app.
+Service Workers API:
+
+This is key for making your web app work offline or load faster by caching resources. It’s a big part of what makes 
+Progressive Web Apps (PWAs) possible.
